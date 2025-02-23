@@ -6,6 +6,12 @@
   "sourceRoot": "apps/main/src",
   "tags": [],
   "targets": {
+    "build-rsbuild": {
+      "command": "npx rsbuild build",
+      "options": {
+        "cwd": "apps/main"
+      }
+    },
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
