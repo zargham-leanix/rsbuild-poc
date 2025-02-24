@@ -9,19 +9,18 @@ npx nx build-rsbuild main
 Fails with error:
 
 ```
-Failed to compile, check the errors for troubleshooting.
-File: **/main/src/styles.scss:1:1
-  × Module parse failed:
-  ╰─▶   × JavaScript parsing error: Expression expected
-         ╭─[2:0]
-       1 │ /* You can add global styles to this file, and also import other style files */
-       2 │ @import '@angular/cdk/overlay-prebuilt.css';
-         · ─
-         ╰────
+File: /Users/I529226/workspace/playground/rsbuild-poc/apps/main/src/styles.scss:1:1
+  × Module build failed:
+  ╰─▶   × TypeError: Cannot read properties of undefined (reading '__esModule')
+        │     at handleExports (/Users/I529226/workspace/playground/rsbuild-poc/node_modules/@rsbuild/core/node_modules/@rspack/core/dist/cssExtractLoader.js:170:40)
+        │     at /Users/I529226/workspace/playground/rsbuild-poc/node_modules/@rsbuild/core/node_modules/@rspack/core/dist/cssExtractLoader.js:264:7
+        │     at /Users/I529226/workspace/playground/rsbuild-poc/node_modules/@rsbuild/core/node_modules/@rspack/core/dist/index.js:6301:13
 
-  help:
-        To enable support for Sass, use "@rsbuild/plugin-sass".
-
-error   Failed to build.
-error   Rspack build failed!
+File: /Users/I529226/workspace/playground/rsbuild-poc/apps/main/src/styles.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 4 │ @import 'global/styles';
+        │   │         ^^^^^^^^^^^^^^^
+        │   ╵
 ```
