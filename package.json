@@ -28,6 +28,7 @@
     "@angular/language-service": "~19.1.0",
     "@eslint/js": "^9.8.0",
     "@ng-rsbuild/plugin-angular": "^19.0.0-alpha.28",
+    "@rsbuild/plugin-sass": "1.2.2",
     "@nx/angular": "20.4.6",
     "@nx/eslint": "20.4.6",
     "@nx/eslint-plugin": "20.4.6",
