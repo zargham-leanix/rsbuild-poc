@@ -3,5 +3,5 @@
 Run
 
 ```
-npx nx build-rsbuild main
+npx nx build-rsbuild core-ui
 ```
