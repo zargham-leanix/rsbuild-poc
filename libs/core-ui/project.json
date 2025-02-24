@@ -6,6 +6,12 @@
   "projectType": "library",
   "tags": ["ui"],
   "targets": {
+    "build-rsbuild": {
+      "command": "npx rsbuild build",
+      "options": {
+        "cwd": "libs/core-ui"
+      }
+    },
     "build": {
       "executor": "@nx/angular:ng-packagr-lite",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
