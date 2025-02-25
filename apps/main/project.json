@@ -12,6 +12,12 @@
         "cwd": "apps/main"
       }
     },
+    "serve-rsbuild": {
+      "command": "npx rsbuild dev",
+      "options": {
+        "cwd": "apps/main"
+      }
+    },
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
