@@ -53,7 +53,7 @@
   },
   "plugins": [
     {
-      "plugin": "@nx/rsbuild",
+      "plugin": "@nx/rspack/plugin",
       "options": {
         "buildTargetName": "build",
         "devTargetName": "dev",
