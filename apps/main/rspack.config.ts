@@ -11,6 +11,9 @@ module.exports = createConfig({
   assets: [],
   root: __dirname,
   scripts: [],
+  stylePreprocessorOptions: {
+    includePaths: ['libs/shared/styles'],
+  },
   jit: false,
   hasServer: false,
   skipTypeChecking: false,
