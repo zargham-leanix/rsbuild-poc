@@ -1,5 +1,5 @@
 const { resolve } = require('path');
-const { createConfig } = require('@ng-rspack/build');
+const { createConfig } = require('@nx/angular-rspack');
 
 module.exports = createConfig({
   inlineStylesExtension: 'scss',
